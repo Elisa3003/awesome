@@ -13,6 +13,10 @@
         </style>
     </head>
     <body>
+        <?php
+        echo "Hello World!";
+        echo "<br />";
+        ?>
         <h1>Starbuzz Coffee Beverages</h1>
 
         <h2>House Blend,$1.49</h2>
