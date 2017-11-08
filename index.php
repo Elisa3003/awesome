@@ -4,9 +4,10 @@
     </head>
     <body>
         <?php
-        $myfile=fopen("dataStore.txt")or die("Unable to open file!");
+        $myfile=fopen("dataStore.txt");
         while(!feof($myfile)){
             echo fgets($myfile);
+            echo "<br />";
         }
         fclose($myfile);
         echo "<br />";
