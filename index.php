@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-        $myfile=fopen("dataStore.txt","r");
+        $myfile=fopen("data.txt","r");
         while(!feof($myfile)){
             echo fgets($myfile);
             echo "<br />";
