@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>step counter data </title>
+        <meta http-equiv="refresh" content="5">
     </head>
     <body>
         <table border="1px" width="80%" align="center">
