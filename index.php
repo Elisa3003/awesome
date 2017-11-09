@@ -1,16 +1,17 @@
 <html>
     <head>
-        <title>Starbuzz Coffee </title>
+        <title>step counter data </title>
     </head>
     <body>
-        <?php
-        $myfile=fopen("data.txt","r");
-        while(!feof($myfile)){
-            echo fgets($myfile);
-            echo "<br />";
-        }
-        fclose($myfile);
-        echo "<br />";
+        <table>
+            <?php
+            $myfile=fopen("data.txt","r");
+            while(!feof($myfile)){
+                $values=explode("|",fgets($myfile));
+                echo "<tr><td>"+values[1]+"</td><td>"+values[2]+"</td><td>"+values[2]+"</td></tr>";
+            }
+            fclose($myfile);
         ?>
+        </table>
     </body>
 </html>
