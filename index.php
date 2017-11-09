@@ -3,7 +3,7 @@
         <title>step counter data </title>
     </head>
     <body>
-        <table>
+        <table border="1px">
             <?php
             $myfile=fopen("data.txt","r");
             while(!feof($myfile)){
