@@ -8,7 +8,7 @@
             $myfile=fopen("data.txt","r");
             while(!feof($myfile)){
                 $values=explode("|",fgets($myfile));
-                echo "<tr><td>"+values[1]+"</td><td>"+values[2]+"</td><td>"+values[2]+"</td></tr>";
+                echo "<tr><td>"+$values[1]+"</td><td>"+$values[2]+"</td><td>"+$values[2]+"</td></tr>";
             }
             fclose($myfile);
         ?>
